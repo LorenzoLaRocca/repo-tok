@@ -31,7 +31,7 @@ body {
     color: white;
 }
 
-img, video{
+img, video {
     display: block;
     width: 100%;
     height: 100%;
@@ -48,6 +48,74 @@ img, video{
     gap: 20px
 }
 
+/* inzialmente ho provato a creare un solo container ma non funzionava, copilot ha provveduto a creare due container,
+   .logo-container e .logo-container img, non ho bene capito il perchè, ma sono abbastanza sicuro di poter aggiustare il tutto in un unico container
+    ma per ora lascio così per mancanza di tempo. Questo è valido anche per altre classe successive */
+.logo-container {
+    position: absolute;
+    top: 30px; /* in modo da farlo apparire più centrale */
+    left: 50%;
+    transform: translateX(-50%); /* Center the logo horizontally */
+    z-index: 1; /* Ensure it appears above the image */
+}
+
+.logo-container img {
+    width: 150px; /* Increase size */
+    height: auto;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    font-size: 20px; /* Slightly larger font size */
+    line-height: 1.5; /* Add spacing between lines */
+    padding: 10px 20px; /* Add padding around the text */
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for better readability */
+    border-radius: 10px; /* Rounded corners */
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8); /* Stronger shadow for better contrast */
+}
+
+.instruction-container {
+    position: absolute;
+    bottom: 60px;
+    left: 30%;
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    animation: fadeInUp 2s infinite; /* Add a subtle animation */
+}
+
+.instruction-container i {
+    font-size: 24px;
+    margin-top: 5px;
+    animation: bounce 1.5s infinite; /* Add a bounce effect to the icon */
+}
+
+/* Keyframes for bounce animation */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Keyframes for fade-in animation */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 
 .info {
     position: absolute;
@@ -61,4 +129,8 @@ img, video{
 
 .audio {
     font-size: 14px;
+}
+
+.red-heart {
+    color: red;
 }

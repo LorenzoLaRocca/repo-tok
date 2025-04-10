@@ -1,14 +1,14 @@
 video: fiesta
 username: @lorello37
-description: Video divertente #tiktok #trending
+description: fiestaaa! #repogame #gametok
 audio: Musica originale - Artista
 
 video: soldi
 username: @lorello37
-description: Eyes up #sky #dreams #goodnight
+description: che sbadato #fail #friendlyfire #goodnight
 audio: Musica originale - Artista
 
 video: alien
 username: @lorello37
-description: lonely path #life #choices
+description: pauraaa #life #aliens
 audio: Musica originale - Artista
